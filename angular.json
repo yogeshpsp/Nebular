@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "C:/Users/YOGESH/e-commerce/node_modules/bulma/css/bulma.css",
               "src/styles.scss"
             ],
             "scripts": []
