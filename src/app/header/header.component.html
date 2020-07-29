@@ -4,22 +4,19 @@
             <img src="http://bootstrap-ecommerce.com/assets/images/logo.png">
         </nb-layout-column>
         <nb-layout-column style="padding-left:19%;">
-            <input type="text" nbInput fullwidth shape="primary" placeholder="search" style="width:3000px;">
+            <input type="text" nbInput fullwidth shape="primary" placeholder="search" style="width:3000px;background-color:#fff;">
             <button nbButton status="primary" shape="rectangle"><nb-icon icon="search"></nb-icon></button>
         </nb-layout-column> 
         <nb-layout-column style="padding-left:24%;">
-            <button nbButton shape="round" size="large" status="control" outline status="default"><nb-icon icon="shopping-cart"></nb-icon></button>
-            <button style="margin-left:14px;" nbButton shape="round" size="large" status="control" outline status="default"><nb-icon icon="heart"></nb-icon></button>
-            <button style="margin-left:14px;" nbButton shape="round" size="large" status="control" outline status="default"><nb-icon icon="person"></nb-icon></button>
+            <button nbButton shape="round" size="large" status="control" outline status="default" batchText="99+" batchStatus="warning" style="background-color:#fff;"><nb-icon style="color:#838383;" icon="shopping-cart"></nb-icon></button>
+            <button style="margin-left:14px; background-color:#fff;" nbButton shape="round" size="large" status="control" outline status="default"><nb-icon style="color:#838383;" icon="heart"></nb-icon></button>
+            <button style="margin-left:14px;background-color:#fff;" nbButton shape="round" size="large" status="control" status="default"><nb-icon style="color:#838383;" icon="person"></nb-icon></button>
         </nb-layout-column>
     </nb-layout-header>
     <nb-layout-header subheader style="padding-top: 34px;;">
         <div class="navbar-item has-dropdown is-hoverable">
             <div>
             <nb-select placeholder="All Categories" style="padding-top:14px;">
-                <nb-option>Clean with option without value</nb-option>
-                <nb-option [value]="null">Clean with null value</nb-option>
-                <nb-option [value]="undefined">Clean with null value</nb-option>
                 <nb-option [value]="0">Option 0</nb-option>
                 <nb-option [value]="1">Option 1</nb-option>
                 <nb-option [value]="2">Option 2</nb-option>
@@ -37,7 +34,7 @@
             <button nbButton status="control">Some Link</button>
         </div>  
         <div>
-            <button nbButton status="primary" style="margin-top:14px;">Button<nb-icon style="padding-left:4px;" icon="plus-outline"></nb-icon></button>
+            <button nbButton status="primary" style="margin-top:14px;" badgeText="99+" badgeStatus="warning">Button<nb-icon style="padding-left:4px;" icon="plus-outline"></nb-icon></button>
             
         </div> 
             </div> 
