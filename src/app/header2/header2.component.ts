@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Header2Component implements OnInit {
 selectedItem;
-
+items = [
+  { title: 'Profile' },
+  { title: 'Logout' },
+];
+cart=[
+  {title:"1 item"},
+  {title:"2 item"},
+  {title:"3 item"},
+  {title:"4 item"},
+];
   constructor() { }
 
   ngOnInit(): void {
