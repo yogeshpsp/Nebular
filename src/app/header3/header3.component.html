@@ -1,0 +1,59 @@
+<nb-layout>
+    <nb-layout-header>
+        <nb-badge text="4" status="warning" position="top-right"></nb-badge>
+        <div>
+        <img src="http://bootstrap-ecommerce.com/assets/images/logo.png">
+        </div>
+        <div style="padding-left:13%;">
+            <nb-form-field>
+                <input nbInput type="text" style="width:1000px; background-color:#fff !important" placeholder="search">
+            <button nbButton status="primary"><nb-icon icon="search"></nb-icon></button>
+            </nb-form-field>
+        </div>
+        <nb-layout-column style="padding-left: 19%;">
+            <button nbButton status="primary" badgeText="99+">Login</button>
+            <button style="margin-left: 25px;background-color: #fff;" nbButton outline status="primary">Sign Up</button>
+            <button badgeText="99+" style="margin-left: 25px;background-color: #fff;" nbButton outline status="default">
+                My Cart</button>
+        </nb-layout-column>
+    </nb-layout-header>
+    <nb-layout-header subheader style="padding-top:25px;">
+        <nb-layout-column>
+            <nb-tabset>
+                <nb-tab tabTitle="All categories" >
+                  <p>List of <strong>categories</strong>.</p>
+                </nb-tab>
+                <nb-tab tabTitle="Fashion">
+                  <p>List of <strong>Fashion items</strong>.</p>
+                </nb-tab>
+                <nb-tab tabTitle="Electronics">
+                  <p>List of <strong>transactions</strong>.</p>
+                </nb-tab>
+                <nb-tab tabTitle="Baby&Toys">
+                    <p>List of <strong>transactions</strong>.</p>
+                  </nb-tab>
+                <nb-tab tabTitle="Fitness">
+                    <p>List of <strong>transactions</strong>.</p>
+                  </nb-tab>
+              </nb-tabset>
+        </nb-layout-column>
+        <nb-layout-column style="padding-bottom:65px;padding-left:56px;">
+            <nb-select placeholder="US" style="padding-top:14px;">
+                <nb-option [value]="0">Option 0</nb-option>
+                <nb-option [value]="1">Option 1</nb-option>
+                <nb-option [value]="2">Option 2</nb-option>
+                <nb-option [value]="3">Option 3</nb-option>
+                <nb-option [value]="4">Option 4</nb-option>
+              </nb-select>
+        </nb-layout-column>
+        <nb-layout-column style="padding-bottom:65px;padding-left:16px;">
+            <nb-select placeholder="English" style="padding-top:14px;">
+                <nb-option [value]="0">Option 0</nb-option>
+                <nb-option [value]="1">Option 1</nb-option>
+                <nb-option [value]="2">Option 2</nb-option>
+                <nb-option [value]="3">Option 3</nb-option>
+                <nb-option [value]="4">Option 4</nb-option>
+              </nb-select>
+        </nb-layout-column>
+    </nb-layout-header>
+</nb-layout>
