@@ -9,50 +9,37 @@
             <button nbButton status="primary"><nb-icon icon="search"></nb-icon></button>
             </nb-form-field>
         </div>
-        <nb-layout-column style="padding-left: 19%;">
+        <div style="padding-left: 19%;">
             <button nbButton status="primary" badgeText="99+">Login</button>
             <button style="margin-left: 25px;background-color: #fff;" nbButton outline status="primary">Sign Up</button>
             <button nbButton outline status="default" badgeText="5" badgeStatus="danger" style="margin-left: 25px;background-color: #fff;"> My Cart</button> 
-             
-        </nb-layout-column>
+        </div>
     </nb-layout-header>
-    <nb-layout-header subheader style="padding-top:25px;">
-        <nb-layout-column>
-            <nb-tabset>
-                <nb-tab tabTitle="All categories" >
-                  <p>List of <strong>categories</strong>.</p>
-                </nb-tab>
-                <nb-tab tabTitle="Fashion">
-                  <p>List of <strong>Fashion items</strong>.</p>
-                </nb-tab>
-                <nb-tab tabTitle="Electronics">
-                  <p>List of <strong>transactions</strong>.</p>
-                </nb-tab>
-                <nb-tab tabTitle="Baby&Toys">
-                    <p>List of <strong>transactions</strong>.</p>
-                  </nb-tab>
-                <nb-tab tabTitle="Fitness">
-                    <p>List of <strong>transactions</strong>.</p>
-                  </nb-tab>
-              </nb-tabset>
-        </nb-layout-column>
-        <nb-layout-column style="padding-bottom:65px;padding-left:56px;">
-            <nb-select placeholder="US" style="padding-top:14px;">
+    <nb-layout-header subheader style="padding-top:15px;border-top: 1px solid #e4e3e3;">
+        <div>
+            <button nbButton style="background-color: #fff;border: none;">All Categories</button>
+            <button nbButton style="background-color: #fff;border: none;">Fashion</button>
+            <button nbButton style="background-color: #fff;border: none;">Electronics</button>
+            <button nbButton style="background-color: #fff;border: none;" >Baby & Toys</button>
+            <button nbButton style="background-color: #fff;border: none;">Fitness</button>
+        </div>
+        <div>
+            <nb-select placeholder="USD" >
                 <nb-option [value]="0">Option 0</nb-option>
                 <nb-option [value]="1">Option 1</nb-option>
                 <nb-option [value]="2">Option 2</nb-option>
                 <nb-option [value]="3">Option 3</nb-option>
                 <nb-option [value]="4">Option 4</nb-option>
               </nb-select>
-        </nb-layout-column>
-        <nb-layout-column style="padding-bottom:65px;padding-left:16px;">
-            <nb-select placeholder="English" style="padding-top:14px;">
+           
+            <nb-select placeholder="English">
                 <nb-option [value]="0">Option 0</nb-option>
                 <nb-option [value]="1">Option 1</nb-option>
                 <nb-option [value]="2">Option 2</nb-option>
                 <nb-option [value]="3">Option 3</nb-option>
                 <nb-option [value]="4">Option 4</nb-option>
               </nb-select>
-        </nb-layout-column>
+            </div>
     </nb-layout-header>
 </nb-layout>
+

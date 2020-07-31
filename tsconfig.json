@@ -15,6 +15,12 @@
     },
     {
       "path": "./e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/at-ecommerce/header/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/at-ecommerce/header/tsconfig.spec.json"
     }
 ]
 }
