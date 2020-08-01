@@ -1,21 +1,21 @@
 <nb-layout>
-    <nb-layout-header>
+    <nb-layout-header class="at-head">
         <div>
         <img src="http://bootstrap-ecommerce.com/assets/images/logo.png">
         </div>
-        <div style="padding-left:13%;">
+        <div>
             <nb-form-field>
                 <input nbInput type="text" style="width:1000px; background-color:#fff !important" placeholder="search">
             <button nbButton status="primary"><nb-icon icon="search"></nb-icon></button>
             </nb-form-field>
         </div>
-        <div style="padding-left: 19%;">
+        <div>
             <button nbButton status="primary" badgeText="99+">Login</button>
             <button style="margin-left: 25px;background-color: #fff;" nbButton outline status="primary">Sign Up</button>
             <button nbButton outline status="default" badgeText="5" badgeStatus="danger" style="margin-left: 25px;background-color: #fff;"> My Cart</button> 
         </div>
     </nb-layout-header>
-    <nb-layout-header subheader style="padding-top:15px;border-top: 1px solid #e4e3e3;">
+    <nb-layout-header subheader class="at-head" style="padding-top:15px;border-top: 1px solid #e4e3e3;">
         <div>
             <button nbButton style="background-color: #fff;border: none;">All Categories</button>
             <button nbButton style="background-color: #fff;border: none;">Fashion</button>
@@ -24,7 +24,7 @@
             <button nbButton style="background-color: #fff;border: none;">Fitness</button>
         </div>
         <div>
-            <nb-select placeholder="USD" >
+            <nb-select class="at-dropdown" placeholder="USD" >
                 <nb-option [value]="0">Option 0</nb-option>
                 <nb-option [value]="1">Option 1</nb-option>
                 <nb-option [value]="2">Option 2</nb-option>
@@ -32,12 +32,11 @@
                 <nb-option [value]="4">Option 4</nb-option>
               </nb-select>
            
-            <nb-select placeholder="English">
+            <nb-select class="at-dropdown" placeholder="English">
                 <nb-option [value]="0">Option 0</nb-option>
                 <nb-option [value]="1">Option 1</nb-option>
                 <nb-option [value]="2">Option 2</nb-option>
                 <nb-option [value]="3">Option 3</nb-option>
-                <nb-option [value]="4">Option 4</nb-option>
               </nb-select>
             </div>
     </nb-layout-header>

@@ -1,5 +1,5 @@
 <nb-layout>
-    <nb-layout-header class="nav" style="padding-top:12px;">
+    <nb-layout-header class="at-header" style="padding-top:12px;">
         <div>
             <img src="http://bootstrap-ecommerce.com/assets/images/logo.png">
         </div>
@@ -13,28 +13,30 @@
             <button style="margin-left:14px;background-color:#fff;" nbButton shape="round" size="large" status="control" status="default" [nbContextMenu]="items"><nb-icon style="color:#838383;" icon="person"></nb-icon></button>
         </div>
     </nb-layout-header>
-    <nb-layout-header subheader class="check">
+    <nb-layout-header subheader class="at-header" style="padding-top:25px;border-top: 1px solid #e4e3e3;">
         <div class="navbar-item has-dropdown is-hoverable">
             <div>
-            <nb-select placeholder="All Categories" style="padding-top:14px;">
+            <nb-select  class="at-dropdown" placeholder="All Categories" style="padding-top:14px;">
                 <nb-option [value]="0">Option 0</nb-option>
                 <nb-option [value]="1">Option 1</nb-option>
                 <nb-option [value]="2">Option 2</nb-option>
                 <nb-option [value]="3">Option 3</nb-option>
-                <nb-option [value]="4">Option 4</nb-option>
-              </nb-select>
+              </nb-select> 
             </div>
-            <div>
+            <div class="at-tab">
                 <nb-tabset>
                   <nb-tab tabTitle="Hot Deals"></nb-tab>
                   <nb-tab tabTitle="Blog"></nb-tab>
               </nb-tabset>
           </div>
-            <div style="padding-left: 85%; padding-top:14px;">
+        </div>
+        <div>
+            <div>
             <button nbButton status="control">Some Link</button>
+            <button nbButton status="primary" badgeText="99+" badgeStatus="warning">Button<nb-icon icon="plus-outline"></nb-icon></button>
         </div>  
         <div>
-            <button nbButton status="primary" style="margin-top:14px;" badgeText="99+" badgeStatus="warning">Button<nb-icon style="padding-left:4px;" icon="plus-outline"></nb-icon></button>
+           
             
         </div> 
             </div> 

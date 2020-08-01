@@ -1,0 +1,22 @@
+.at-dropdown {
+    max-width: 25vh !important;
+    .select-button{
+        background-color: #fff !important;
+        min-width: 10vh !important;
+        border: none !important;
+        font-weight: 650 !important;
+    }
+}
+
+.at-head {
+    nav {
+        justify-content: space-between !important;
+    }
+}
+
+.at-user{
+    .user-name{
+        color:#838383 !important;
+        font-weight: 700 !important;
+    }
+}

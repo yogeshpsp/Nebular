@@ -1,13 +1,14 @@
 {
   "name": "e-commerce",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-at-header": "ng build --prod --project @at-ecommerce/header & npm version patch"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +23,7 @@
     "@angular/router": "~10.0.2",
     "@nebular/eva-icons": "^5.1.0",
     "@nebular/theme": "^5.1.0",
+    "@parameswaranv/header": "0.0.1",
     "bulma": "^0.9.0",
     "eva-icons": "^1.1.2",
     "font-awesome": "^4.7.0",

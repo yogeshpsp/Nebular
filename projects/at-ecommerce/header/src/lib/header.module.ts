@@ -15,8 +15,8 @@ import { Header3Component } from './header3/header3.component';
     Header2Component,
     Header3Component
   ],
-  imports: [  NbThemeModule.forRoot({ name: 'default' }),
-  NbMenuModule.forRoot(),
+  imports: [  NbThemeModule,
+  NbMenuModule,
   NbLayoutModule,NbButtonModule,NbInputModule,NbIconModule,NbSelectModule,NbTabsetModule,NbContextMenuModule,NbActionsModule,NbBadgeModule,NbTabsetModule,NbFormFieldModule,NbUserModule,
   NbEvaIconsModule,NbOptionModule],
   exports: [

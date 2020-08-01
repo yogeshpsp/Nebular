@@ -1,5 +1,5 @@
 <nb-layout>
-    <nb-layout-header>
+    <nb-layout-header class="at-head">
         <div>
         <img src="http://bootstrap-ecommerce.com/assets/images/logo.png">
         </div>
@@ -10,7 +10,7 @@
             </nb-form-field>
         </div>
         <div>
-            <nb-user size="large"
+            <nb-user class="at-user" size="large"
              name="Cart"
              title="4 items"
              badgeText="4"
@@ -21,7 +21,7 @@
             </nb-user>
         </div>
      <div>
-            <nb-user size="large"
+            <nb-user class="at-user" size="large"
              name="Sign in/join"
              title="My Account"
              [nbContextMenu]="items"
@@ -29,7 +29,7 @@
                >   </nb-user>
         </div>
     </nb-layout-header>
-    <nb-layout-header subheader style="padding-top:25px;border-top: 1px solid #e4e3e3;">
+    <nb-layout-header subheader style="border-top: 1px solid #e4e3e3;">
         <div>
           <button nbButton style="background-color: #fff;border: none;">All Categories</button>
           <button nbButton style="background-color: #fff;border: none;">Fashion</button>
@@ -37,7 +37,7 @@
           <button nbButton style="background-color: #fff;border: none;" >Baby & Toys</button>
           <button nbButton style="background-color: #fff;border: none;">Fitness</button>
         
-          <nb-select placeholder="More" class="nb-theme-default">
+          <nb-select placeholder="More" class="at-dropdown">
             <nb-option [value]="0">Option 0</nb-option>
             <nb-option [value]="1">Option 1</nb-option>
             <nb-option [value]="2">Option 2</nb-option>
