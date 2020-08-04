@@ -1,47 +1,69 @@
-<nb-layout>
-    <nb-layout-header class="at-header" style="padding-top:12px;">
-        <div>
+<nb-layout class="header1" [ngClass]="(commonService.layoutClass | async)">
+    <nb-layout-header class="at-common-header at-header">
+        <div class="client-title">
+            <button class="at-menu-button" nbSuffix nbButton ghost (click)="toggle()">
+                <nb-icon icon="menu"></nb-icon>
+            </button>
             <img src="http://bootstrap-ecommerce.com/assets/images/logo.png">
         </div>
-        <div>
-            <input type="text" nbInput fullwidth shape="primary" placeholder="search" style="width:3000px;background-color:#fff;">
-            <button nbButton status="primary" shape="rectangle"><nb-icon icon="search"></nb-icon></button>
-        </div> 
-        <div>
-            <button nbButton shape="round" size="large" status="control" outline status="default" batchText="99+" batchStatus="warning" style="background-color:#fff;"><nb-icon style="color:#838383;" icon="shopping-cart"></nb-icon></button>
-            <button style="margin-left:14px; background-color:#fff;" nbButton shape="round" size="large" status="control" outline status="default"><nb-icon style="color:#838383;" icon="heart"></nb-icon></button>
-            <button style="margin-left:14px;background-color:#fff;" nbButton shape="round" size="large" status="control" status="default" [nbContextMenu]="items"><nb-icon style="color:#838383;" icon="person"></nb-icon></button>
+        <div class="at-search">
+            <nb-form-field>
+                <input class="at-search-input" type="text" nbInput fullwidth placeholder="search">
+                <button class="at-search-button" nbSuffix nbButton ghost>
+                    <nb-icon icon="search"></nb-icon>
+                </button>
+            </nb-form-field>
+        </div>
+        <div class="at-actions">
+            <button class="at-action" nbButton shape="round" size="large" status="control" outline status="default"
+                batchText="99+" batchStatus="warning">
+                <nb-icon class="at-action-icon" icon="shopping-cart"></nb-icon>
+            </button>
+            <button class="at-action" nbButton shape="round" size="large" status="control" outline status="default">
+                <nb-icon class="at-action-icon" icon="heart"></nb-icon>
+            </button>
+            <button class="at-action" nbButton shape="round" size="large" status="control" status="default" [nbContextMenu]="items">
+                <nb-icon class="at-action-icon" icon="person"></nb-icon>
+            </button>
         </div>
     </nb-layout-header>
-    <nb-layout-header subheader class="at-header" style="padding-top:25px;border-top: 1px solid #e4e3e3;">
-        <div class="navbar-item has-dropdown is-hoverable">
-            <div>
-            <nb-select  class="at-dropdown" placeholder="All Categories" style="padding-top:14px;">
-                <nb-option [value]="0">Option 0</nb-option>
-                <nb-option [value]="1">Option 1</nb-option>
-                <nb-option [value]="2">Option 2</nb-option>
-                <nb-option [value]="3">Option 3</nb-option>
-              </nb-select> 
+    <nb-layout-header class="at-common-header at-sub-header1">
+        <div class="at-search">
+            <nb-form-field>
+                <input class="at-search-input" type="text" nbInput fullwidth placeholder="search">
+                <button class="at-search-button" nbSuffix nbButton ghost>
+                    <nb-icon icon="search"></nb-icon>
+                </button>
+            </nb-form-field>
+        </div>
+    </nb-layout-header>
+
+    <nb-layout-header subheader class="at-common-header at-sub-header2">
+        <div class="at-menubar">
+            <div class="at-category">
+                <nb-select class="at-dropdown" placeholder="All Categories">
+                    <nb-option [value]="0">Option 0</nb-option>
+                    <nb-option [value]="1">Option 1</nb-option>
+                    <nb-option [value]="2">Option 2</nb-option>
+                    <nb-option [value]="3">Option 3</nb-option>
+                </nb-select>
             </div>
-            <div class="at-tab">
-                <nb-tabset>
-                  <nb-tab tabTitle="Hot Deals"></nb-tab>
-                  <nb-tab tabTitle="Blog"></nb-tab>
-              </nb-tabset>
-          </div>
+            <div class="at-menus">
+                <button class="at-menu" nbButton status="control">Hot Deals</button>
+                <button class="at-menu" nbButton status="control">Blogs</button>
+            </div>
         </div>
-        <div>
-            <div>
+        <div class="at-extras">
             <button nbButton status="control">Some Link</button>
-            <button nbButton status="primary" badgeText="99+" badgeStatus="warning">Button<nb-icon icon="plus-outline"></nb-icon></button>
-        </div>  
-        <div>
-           
-            
-        </div> 
-            </div> 
+            <button nbButton status="primary" badgeText="99+" badgeStatus="warning">Button<nb-icon icon="plus-outline">
+                </nb-icon></button>
+        </div>
     </nb-layout-header>
-</nb-layout>  
-
-
- 
+    <nb-sidebar class="at-sidebar" tag="left">
+        <button class="at-sidebar-button" nbButton status="control">Hot Deals</button>
+        <button class="at-sidebar-button" nbButton status="control">Blogs</button>
+        <button class="at-sidebar-button" nbButton status="control">Some Link</button>
+        <button class="at-sidebar-button" nbButton status="primary" badgeText="99+" badgeStatus="warning">Button<nb-icon icon="plus-outline">
+            </nb-icon></button>
+    </nb-sidebar>
+</nb-layout>

@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { CommonService } from '../common.service';
+import { NbSidebarService } from '@nebular/theme';
 
 @Component({
   selector: 'at-header1',
@@ -11,8 +13,27 @@ export class Header1Component implements OnInit {
     { title: 'Profile' },
     { title: 'Logout' },
   ];
-  constructor() { }
 
+  resitem=[
+    { title:'Cart'},
+    { title:'Profile'},
+    { title:'Logout'},
+
+  ]
+  constructor(
+    public commonService: CommonService,
+    public sidebarService: NbSidebarService
+  ) {
+    this.commonService.layoutClass.subscribe((res) => {
+    })
+  }
+  toggle() {
+    this.sidebarService.toggle(false, 'left');
+  }
+
+  toggleCompact() {
+    this.sidebarService.toggle(true, 'right');
+  }
   ngOnInit(): void {
   }
 

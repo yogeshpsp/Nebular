@@ -1,6 +1,6 @@
 {
   "name": "e-commerce",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -24,6 +24,7 @@
     "@nebular/eva-icons": "^5.1.0",
     "@nebular/theme": "^5.1.0",
     "@parameswaranv/header": "0.0.1",
+    "bootstrap": "^4.5.0",
     "bulma": "^0.9.0",
     "eva-icons": "^1.1.2",
     "font-awesome": "^4.7.0",

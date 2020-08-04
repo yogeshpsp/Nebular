@@ -1,23 +1,154 @@
-.at-dropdown {
-    max-width: 25vh !important;
-    .select-button{
-        background-color: #fff !important;
-        min-width: 10vh !important;
-        border: none !important;
-        color:black !important;
-        font-weight: 650 !important;
+
+.header1 {
+    .at-common-header {
+        padding: 0 !important;
+        nav {
+            width: 100%;
+            height: 10vh !important;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .at-header {
+        .client-title {
+            width: 30vh;
+            display: flex;
+            
+            .at-menu-button {
+                display: none;
+            }
+        }
+        .at-search {
+            width: 70vh;
+            .at-search-input {
+                max-width: 100% !important;
+                width: 100%;
+                background-color:#ffffff !important;
+            }
+            .at-search-button {
+                background-color: #3366ff !important;
+                border-color: #3366ff !important;
+                color: #ffffff !important;
+            }
+        }
+        .at-actions {
+            width: 45vh;
+            display: flex;
+            justify-content: space-between;
+
+            .at-action {
+                background-color: #fff !important;
+                border-color: #e4e9f2 !important;
+                .at-action-icon{
+                    color: #838383 !important;
+                }
+            }    
+            }
+            .at-action-small {
+                background-color: #fff !important;
+                border-color: #e4e9f2 !important;
+                .at-action-icon{
+                    color: #838383 !important;
+                } 
+        }
+    }
+    .at-sub-header1 {
+        display: none;
+        .at-search {
+            width: 100%;
+            .at-search-input {
+                max-width: 100% !important;
+                width: 100%;
+                background-color: #fff;
+            }
+            .at-search-button {
+                background-color: #3366ff !important;
+                border-color: #3366ff !important;
+                color: #ffffff !important;
+            }
+        }
+    }
+    .at-sub-header2 {
+        border-top: 1px solid rgb(239, 239, 239);
+        .at-menu-button {
+            background-color: #fff !important;
+            border: none !important;
+        }
+        .at-menu-more {
+            .select-button {
+                min-width:5rem !important;
+                background-color: #fff !important;
+                border: none !important;
+                color: black !important;
+            }
+        }
+    }
+    .at-sidebar{
+        display: none !important;
     }
 }
 
-.at-head {
-    nav {
-        justify-content: space-between !important;
+.tablet {
+    .at-header {
+        .at-search {
+            width: 75vh !important;
+        }
+        .at-actions {
+            width: 45vh !important;
+        }
+    }
+    .at-sub-header2 {
+        .at-extras {
+            width: 28%;
+        }
     }
 }
 
-.at-user{
-    .user-name{
-        color:#838383 !important;
-        font-weight: 700 !important;
+.mobile {
+    .at-header {
+        .at-search {
+            width: 50vh !important;
+        }
+        .at-actions {
+            width: 44vh !important;
+        }
+    }
+    .at-sub-header2 {
+        .at-extras {
+            width: 40%;
+        }
+    }
+}
+
+.small-mobile {
+    .at-header {
+        .at-menu-button {
+            display: flex !important;
+        }
+        .at-search {
+            display: none;
+        }
+        .at-actions {
+            display: none;
+        }
+        .at-action-small {
+            display: flex !important;
+        }
+    }
+    .at-sub-header1 {
+        display: flex;
+    }
+    .at-sub-header2 {
+        display: none;
+    }
+    .at-sidebar{
+        display: flex !important;
+        .main-container-fixed{
+            top:5.78rem !important;
+        }
+        .at-sidebar-button{
+            width:200px !important;
+        }
     }
 }

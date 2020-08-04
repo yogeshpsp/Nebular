@@ -14,7 +14,7 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { HeaderModule } from 'projects/at-ecommerce/header/src/public-api';
 
 // For Production
-// import { HeaderModule } from '@at-ecommerce/header';
+//import { HeaderModule } from '@parameswaranv/header';
 
 @NgModule({
   declarations: [
